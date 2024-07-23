@@ -51,7 +51,7 @@ const workerConfig = {
     // memos.siki.moe
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'git',
+      id: 'memos',
       // `name` is used at status page and callback message
       name: 'Memos',
       // `method` should be a valid HTTP Method
