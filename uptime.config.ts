@@ -48,6 +48,21 @@ const workerConfig = {
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
       responseKeyword: 'GitSiki',
     },
+    // memos.siki.moe
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'git',
+      // `name` is used at status page and callback message
+      name: 'Memos',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://memos.siki.moe',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://memos.siki.moe',
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+    },
     // mikan.siki.moe
     {
       // `id` should be unique, history will be kept if the `id` remains constant
