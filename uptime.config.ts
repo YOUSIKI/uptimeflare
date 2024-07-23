@@ -63,40 +63,6 @@ const workerConfig = {
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
     },
-    // mikan.siki.moe
-    {
-      // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'mikan',
-      // `name` is used at status page and callback message
-      name: 'MikanAnime Proxy',
-      // `method` should be a valid HTTP Method
-      method: 'GET',
-      // `target` is a valid URL
-      target: 'https://mikan.siki.moe',
-      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://mikan.siki.moe',
-      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000,
-      // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      responseKeyword: 'mikan',
-    },
-    // github.siki.moe
-    {
-      // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'github',
-      // `name` is used at status page and callback message
-      name: 'GitHub Proxy',
-      // `method` should be a valid HTTP Method
-      method: 'GET',
-      // `target` is a valid URL
-      target: 'https://github.siki.moe/https://raw.githubusercontent.com/YOUSIKI/yousiki/main/README.md',
-      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://github.siki.moe',
-      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000,
-      // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      responseKeyword: 'YouSiki',
-    },
   ],
   notification: {
     // [Optional] timezone used in notification messages, default to "Etc/GMT"
