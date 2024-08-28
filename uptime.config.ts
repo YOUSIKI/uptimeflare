@@ -19,7 +19,7 @@ const workerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'www',
       // `name` is used at status page and callback message
-      name: 'Home Page',
+      name: 'Blog',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
@@ -47,6 +47,96 @@ const workerConfig = {
       timeout: 10000,
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
       responseKeyword: 'GitSiki',
+    },
+    // jellyfin.siki.moe
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'jellyfin',
+      // `name` is used at status page and callback message
+      name: 'Media Streaming',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://jellyfin.siki.moe',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://jellyfin.siki.moe',
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+    },
+    // reader.siki.moe
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'reader',
+      // `name` is used at status page and callback message
+      name: 'RSS Reader',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://reader.siki.moe',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://reader.siki.moe',
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+    },
+    // music.siki.moe
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'music',
+      // `name` is used at status page and callback message
+      name: 'Music Streaming',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://music.siki.moe',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://music.siki.moe',
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+    },
+    // qb.siki.moe
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'qb',
+      // `name` is used at status page and callback message
+      name: 'Bittorrent',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://qb.siki.moe',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://qb.siki.moe',
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+    },
+    // rsshub.siki.moe
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'rsshub',
+      // `name` is used at status page and callback message
+      name: 'RSSHub',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://rsshub.siki.moe',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://rsshub.siki.moe',
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+    },
+    // webdav.siki.moe
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'webdav',
+      // `name` is used at status page and callback message
+      name: 'Webdav Storage',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://webdav.siki.moe',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://webdav.siki.moe',
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
     },
   ],
   notification: {
