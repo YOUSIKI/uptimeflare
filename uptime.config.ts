@@ -31,23 +31,6 @@ const workerConfig = {
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
       responseKeyword: 'siki',
     },
-    // git.siki.moe
-    {
-      // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'git',
-      // `name` is used at status page and callback message
-      name: 'Git Server',
-      // `method` should be a valid HTTP Method
-      method: 'GET',
-      // `target` is a valid URL
-      target: 'https://git.siki.moe',
-      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://git.siki.moe',
-      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000,
-      // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      responseKeyword: 'GitSiki',
-    },
     // jellyfin.siki.moe
     {
       // `id` should be unique, history will be kept if the `id` remains constant
